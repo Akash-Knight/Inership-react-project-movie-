@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-base: #06140e;
+  --bg-gradient-top: rgba(16, 185, 129, 0.22);
+  --bg-gradient-bottom: rgba(240, 253, 244, 0.12);
+  --bg-gradient-center: rgba(52, 211, 153, 0.08);
+  --text-main: #ffffff;
+  --text-muted: #a7f3d0;
+  --accent-green: #10b981;
+  --accent-mint: #34d399;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-base);
+  background-image: 
+    radial-gradient(circle at 85% 15%, var(--bg-gradient-top) 0%, transparent 50%),
+    radial-gradient(circle at 15% 85%, var(--bg-gradient-bottom) 0%, transparent 55%),
+    radial-gradient(circle at 50% 50%, var(--bg-gradient-center) 0%, transparent 65%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Styled Scrollbar for Green & White Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #06140e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(52, 211, 153, 0.7);
+}
